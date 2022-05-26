@@ -3,6 +3,7 @@ const router = express.Router();
 
 var sqlite3 = require('sqlite3').verbose();
 
+
 const db = new sqlite3.Database('./routes/mock.db',sqlite3.OPEN_READWRITE,(err)=>{
   if(err) return console.error(err.message);
   console.log("connection successful")
@@ -26,7 +27,7 @@ var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 var dateTime = date+' '+time;
 
-  let body= req.body;
+  //let body= req.body;
 
 const sql='INSERT INTO comentarios (nombre, correo, ip, comentario,fecha) VALUES(?,?,?,?,?)';
  /**db.run(
@@ -38,13 +39,21 @@ sql,
 [nombre,correo,ip,comentario,dateTime],
 (err) => {
   if(err) return console.error(err.message);
+ 
 
 }
+
+
 )
-/** 
-db.close((err) =>{
+res.redirect('/');
+//res.send(console.log({message:'success'}))
+
+
+/*db.close((err) =>{
   if (err) return console.error(err.message);
-})**/
+}
+
+)*/
 
 
 
