@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Login</title>
+	</head>
+	<body style=" margin-left: 450px; width: 80%; text-align: center; background-color: fuchsia;" >
+		<div style="background-color: fuchsia; border: solid black; padding: 35px; width: 40%;">
+
+            <form action="/login" method="post">
+
+                <h1>Login</h1>
+                <br>
+         <label for="usuario">Usuario:</label>
+             <br>
+            <br>
+            <input value='' type="text" id="" name="usuario" placeholder="Ingrese su usuario" required="true">
+        
+        <br>
+        <br>
+        
+         <label for="Pass" >Contraseña:</label>
+         <br>
+         <br>
+         <input  value= '' type="password" id="" name="contra"  required="true" >
+        <br>
+        <br>
+             <button type="submit">Enviar mensaje</button> 
+
+             <h1>Acceder con Google </h1>
+             <button>
+      <a class="button google" href="/login/federated/google">Iniciar sesion con Google </a>
+ </button>
+        </form>
+        </div>
+	</body>
+	</html>	

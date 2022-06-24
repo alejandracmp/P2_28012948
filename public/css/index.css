@@ -3,6 +3,11 @@ body {
 	background-size: 100vw 100vh;
 	background-attachment: fixed;
 		margin: 0;
+        color: white;
+    font-family: 'Amatic SC', cursive;
+    font-weight: normal;
+    font-size: 25px;
+    display: inline;
 
 }
 
