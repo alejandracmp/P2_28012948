@@ -23,8 +23,8 @@ router.get('/login', function(req, res,) {
 });
 
 
-const testu=process.env.MYUS;
-const testp=process.env.MYPAS;
+const testu="Alejandra";
+const testp="P228012948";
 
 router.post('/login', (req,res) => {
 	 var usuario=req.body.usuario;
