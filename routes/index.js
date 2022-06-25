@@ -66,9 +66,9 @@ router.get('/login/federated/google', passport.authenticate('google'));
 
 passport.use(new GoogleStrategy(
   {
-    clientID: process.env.IDC,
-    clientSecret: process.env.SCC,
-    callbackURL: "https://prueba02ale.herokuapp.com//google/callback",
+    clientID: "816046517947-tp7hnksarimf3ud9ioj9kck5fth2ffai.apps.googleusercontent.com",
+    clientSecret: "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",
+    callbackURL: "https://prueba02ale.herokuapp.com/google/callback",
   scope: [
   "https://www.googleapis.com/auth/userinfo.profile",
   "https://www.googleapis.com/auth/userinfo.email",
